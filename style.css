@@ -1,0 +1,100 @@
+* {
+  color: white;
+}
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(15, 15, 15);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+:root {
+  --black: #121212;
+  --gray: #333333;
+  --white: #545454;
+  --dark-blue: #1d3557ff;
+  --blue: #5386e4ff;
+  --red: #9f4a54ff;
+  --bright-red: #ad2831;
+}
+#left_bar {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10%;
+  background-color: var(--white);
+  width: 10%;
+  height: 90%;
+  border: 2px solid black;
+  /* float: left; */
+}
+#main {
+  box-sizing: border-box;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  background-color: var(--gray);
+  width: 80%;
+  height: 90%;
+  border: 2px solid black;
+  /* float: left; */
+}
+#right_bar {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  width: 10%;
+  height: 90%;
+  background-color: var(--white);
+  border: 2px solid black;
+  /* float: left; */
+}
+#top_bar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(28, 60, 102) 55%,
+    rgb(18, 21, 70) 100%,
+    rgb(28, 60, 102) 55%,
+    rgba(2, 0, 36, 1) 0%
+  );
+  padding: 20px;
+  border: 2px solid black;
+  /* float: top; */
+}
+#model_gracz {
+  position: relative;
+  left: 250px;
+}
+#koszulka {
+  position: relative;
+  z-index: 2;
+  left: -254px;
+}
+
+#model_gracz_maly {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  left: 35px;
+  top: 150px;
+  border: 8px solid black;
+}
+#koszulka_mala {
+  position: relative;
+  z-index: 2;
+  top: -129px;
+  /* left:; */
+}
